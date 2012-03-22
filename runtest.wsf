@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package>
+  <job>
+    <script language="JScript" src="mado.js"></script>
+    <script language="JScript" src="jscriptunit.js"></script>
+    <script language="JScript" src="date_test.js"></script>
+  </job>
+</package>
