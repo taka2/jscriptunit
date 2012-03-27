@@ -30,11 +30,12 @@ function assertEquals() {
   var argumentsIndex = 0;
   if(arguments.length === 3) {
     var message = arguments[argumentsIndex++];
-  } else {
-    var message = "expected: " + expected + ", actual: " + actual;
   }
   var expected = arguments[argumentsIndex++];
   var actual = arguments[argumentsIndex++];
+  if(!message) {
+    message = "expected: " + expected + ", actual: " + actual;
+  }
 
   // assert
   return assert(message, expected === actual);
